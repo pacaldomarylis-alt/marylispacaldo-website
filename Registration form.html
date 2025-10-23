@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Student Form</title> 
+        <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #0e5d92; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh;
+             } 
+             
+        .form-container { 
+            background: #bf19ce; 
+            padding: 30px;
+             border-radius: 10px;
+              box-shadow: 0px 4px 8px rgba(14, 13, 13, 0.945);
+              width: 500px; 
+              }
+        
+        .form-container h2 { 
+            text-align: center; 
+            margin-bottom: 20px; 
+            color: #0e0404ea;
+             } 
+             
+        .form-group {
+             margin-bottom: 15px; 
+             } 
+             
+        .form-group label { 
+            display: block;
+             margin-bottom:5px;
+              font-weight: bold; 
+              color: #0f0d0dde;
+               }
+               
+        .form-group input, .form-group select, .form-group textarea { 
+            width: 100%;
+             padding: 10px;
+              border: 1px solid #141111;
+               border-radius: 6px;
+                font-size: 16px;
+                 } 
+                 
+        .form-group textarea { 
+            resize: none;
+             height: 60px;
+              } 
+              
+        .btn { 
+            width: 100%; 
+            padding: 15px;
+             border: none;
+              background: #f1f3e4; 
+              color: rgba(18, 12, 20, 0.856);
+               font-size: 16px; 
+               border-radius: 6px; 
+               cursor: pointer; 
+               transition: 0.3s; 
+               } 
+        
+        .btn:hover { 
+            background: #45a049; 
+            } 
+</style>
+</head>
+<body>
+ <div class="form-container"> 
+    <h2>Student Form</h2> 
+    <form>
+    <div class="form-group">
+    <label for="name">Full Name:</label> 
+    <input type="text" id="name" name="name" placeholder="Enter your full name"> 
+    </div> 
+    
+    <div class="form-group"> 
+    <label for="age">Age:</label> 
+    <input type="number" id="age" name="age" placeholder="Enter your age"> 
+</div> 
+
+<div class="form-group">
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob">
+</div>
+
+    <div class="form-group"> 
+    <label for="gender">Gender:</label> 
+    <select id="gender" name="gender">
+     <option value="">--Select--</option> 
+     <option value="male">Male</option> 
+     <option value="female">Female</option> 
+     <option value="other">Other</option> 
+    </select> 
+</div> 
+
+<div class="form-group"> 
+    <label for="course">Course:</label>
+     <select id="course" name="course"> 
+      <option value="">--Select Course--</option>
+      <option value="BS Hospitality Management">BS Hospitality Management</option>
+      <option value="BS Tourism Management">BS Tourism Management</option>
+      <option value="BIT Comptech">BIT Comptech</option>    
+      <option value="BIT Electronics">BIT Electronics</option>
+      <option value="Bachelor of Elementary Education">Bachelor of Elementary Education</option> 
+     </select> 
+    
+    <div class="form-group"> 
+        <label for="address">Address:</label> 
+        <textarea id="address" name="address" placeholder="Enter your address"></textarea> 
+    </div> 
+    <button type="submit" class="btn">Submit</button> 
+</form> 
+</div> 
+</body> 
+</html>
